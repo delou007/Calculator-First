@@ -146,5 +146,21 @@ namespace Calculator_First
             num1 = 0;
             num2 = 0;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMan.Checked)
+            {
+                MessageBox.Show("You are male.");
+            }
+        }
+
+        private void checkBoxWoman_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxWoman.Checked)
+            {
+                MessageBox.Show("You are female.");
+            }
+        }
     }
 }

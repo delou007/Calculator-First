@@ -45,6 +45,9 @@
             buttonEql = new Button();
             txtTotal = new TextBox();
             button0 = new Button();
+            checkBoxMan = new CheckBox();
+            checkBoxWoman = new CheckBox();
+            labelSex = new Label();
             SuspendLayout();
             // 
             // button1
@@ -218,7 +221,7 @@
             txtTotal.Location = new Point(12, 12);
             txtTotal.Multiline = true;
             txtTotal.Name = "txtTotal";
-            txtTotal.Size = new Size(318, 75);
+            txtTotal.Size = new Size(237, 75);
             txtTotal.TabIndex = 15;
             txtTotal.TextChanged += textBox1_TextChanged;
             // 
@@ -233,11 +236,45 @@
             button0.UseVisualStyleBackColor = true;
             button0.Click += button16_Click;
             // 
+            // checkBoxMan
+            // 
+            checkBoxMan.AutoSize = true;
+            checkBoxMan.Location = new Point(255, 33);
+            checkBoxMan.Name = "checkBoxMan";
+            checkBoxMan.Size = new Size(60, 24);
+            checkBoxMan.TabIndex = 17;
+            checkBoxMan.Text = "Man";
+            checkBoxMan.UseVisualStyleBackColor = true;
+            checkBoxMan.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // checkBoxWoman
+            // 
+            checkBoxWoman.AutoSize = true;
+            checkBoxWoman.Location = new Point(255, 63);
+            checkBoxWoman.Name = "checkBoxWoman";
+            checkBoxWoman.Size = new Size(82, 24);
+            checkBoxWoman.TabIndex = 18;
+            checkBoxWoman.Text = "Woman";
+            checkBoxWoman.UseVisualStyleBackColor = true;
+            checkBoxWoman.CheckedChanged += checkBoxWoman_CheckedChanged;
+            // 
+            // labelSex
+            // 
+            labelSex.AutoSize = true;
+            labelSex.Location = new Point(255, 12);
+            labelSex.Name = "labelSex";
+            labelSex.Size = new Size(35, 20);
+            labelSex.TabIndex = 19;
+            labelSex.Text = "Sex:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(342, 426);
+            Controls.Add(labelSex);
+            Controls.Add(checkBoxWoman);
+            Controls.Add(checkBoxMan);
             Controls.Add(button0);
             Controls.Add(txtTotal);
             Controls.Add(buttonEql);
@@ -281,5 +318,8 @@
         private Button buttonEql;
         private TextBox txtTotal;
         private Button button0;
+        private CheckBox checkBoxMan;
+        private CheckBox checkBoxWoman;
+        private Label labelSex;
     }
 }
